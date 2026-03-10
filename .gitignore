@@ -1,0 +1,41 @@
+# Local Codex / agent tooling
+.agents/
+skills-lock.json
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Environment and local overrides
+.env
+.env.*
+!.env.example
+
+# Python cache (useful if local scripts are added later)
+__pycache__/
+*.py[cod]
+
+# Node/package manager artifacts in case the site evolves
+node_modules/
+.pnpm-store/
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build and local preview output
+dist/
+build/
+.cache/
+.parcel-cache/
+.next/
+coverage/
