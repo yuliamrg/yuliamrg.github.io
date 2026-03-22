@@ -9,21 +9,26 @@
   <link rel="alternate" hreflang="es" href="./">
   <link rel="alternate" hreflang="en" href="./en/">
   <link rel="alternate" hreflang="x-default" href="./">
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
-  <div class="bg" aria-hidden="true"></div>
+  <div class="site-backdrop" aria-hidden="true">
+    <div class="site-noise"></div>
+    <div class="orb orb-one"></div>
+    <div class="orb orb-two"></div>
+  </div>
 
   <header class="site-header" data-header>
     <div class="container">
-      <div class="brand-group">
+      <a class="brand-group" href="#contenido" aria-label="Ir al inicio">
         <div class="brand" aria-hidden="true">YR</div>
         <div class="brand-copy">
           <strong>Yuliam Rivera</strong>
           <span>Data Analyst · Automatización operativa</span>
         </div>
-      </div>
+      </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
         Menú
       </button>
@@ -34,321 +39,415 @@
         <a href="#habilidades">Stack</a>
         <a href="#contacto">Contacto</a>
         <a class="lang" href="./en/">EN</a>
+        <a class="nav-cta" href="exports/cv_data_analytics.pdf" target="_blank" rel="noopener">CV</a>
       </nav>
     </div>
   </header>
 
   <main id="contenido" class="page-shell">
     <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-panel">
-          <div class="eyebrow">Data Analyst · BI · ETL</div>
-          <span class="status-pill">Disponible para roles junior y proyectos remotos</span>
-          <h1>Convierto operación dispersa en información útil para decidir.</h1>
-          <p class="tagline">Dashboards claros, automatización real y control operativo con foco en impacto.</p>
-          <p class="lead">
-            Analista de Datos con base en ingeniería industrial y mantenimiento hospitalario. Trabajo entre operación,
-            costos y reporting: construyo KPIs, automatizo procesos repetitivos y organizo datos para que un equipo
-            técnico o administrativo pueda actuar más rápido y con menos fricción.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#proyectos">Ver casos con impacto</a>
-            <a class="btn btn-secondary" href="exports/cv_data_analytics.pdf" target="_blank" rel="noopener">Abrir CV</a>
+      <div class="container">
+        <div class="hero-layout">
+          <div class="hero-copy surface surface-hero">
+            <div class="hero-kicker-row">
+              <div class="eyebrow">Data Analyst · BI · ETL</div>
+              <span class="status-pill">Disponible para roles junior y proyectos remotos</span>
+            </div>
+            <h1>Convierto operación dispersa en visibilidad, control y decisiones más rápidas.</h1>
+            <p class="hero-intro">
+              Trabajo donde se cruzan mantenimiento, costos y reporting. Ordeno fuentes, defino indicadores y construyo
+              automatizaciones y dashboards que le devuelven trazabilidad a equipos técnicos y administrativos.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#proyectos">Ver casos con impacto</a>
+              <a class="btn btn-secondary" href="exports/cv_data_analytics.pdf" target="_blank" rel="noopener">Abrir CV</a>
+            </div>
+            <div class="hero-tag-cloud" aria-label="Herramientas clave">
+              <span class="inline-pill">Looker Studio</span>
+              <span class="inline-pill">Google Apps Script</span>
+              <span class="inline-pill">Python</span>
+              <span class="inline-pill">Excel avanzado</span>
+              <span class="inline-pill">KPIs · OPEX/CAPEX</span>
+              <span class="inline-pill">ETL ligero</span>
+            </div>
+            <div class="hero-proof-strip" aria-label="Pruebas de valor">
+              <article class="proof-item">
+                <strong>Perfil híbrido</strong>
+                <p>Base operativa real y ejecución analítica aplicada.</p>
+              </article>
+              <article class="proof-item">
+                <strong>Stack pragmático</strong>
+                <p>Soluciones fáciles de desplegar y mantener.</p>
+              </article>
+              <article class="proof-item">
+                <strong>Impacto medible</strong>
+                <p>Reducción de tiempo, trazabilidad y control.</p>
+              </article>
+            </div>
           </div>
-          <div class="hero-notes">
-            <span class="inline-pill">Looker Studio</span>
-            <span class="inline-pill">Google Apps Script</span>
-            <span class="inline-pill">Python y Excel avanzado</span>
-            <span class="inline-pill">KPIs · OPEX/CAPEX · ETL ligero</span>
-          </div>
-        </div>
 
-        <aside class="hero-aside" aria-label="Resumen profesional">
-          <div class="profile-card">
-            <img src="./assets/profile.png" alt="Foto de Yuliam Rivera">
-            <div class="profile-copy">
-              <p class="role">Data Analyst</p>
-              <p class="location">Cali, Colombia · Remoto / híbrido</p>
-              <a class="text-link" href="#contacto">Agenda una conversación</a>
-            </div>
-          </div>
-          <div class="hero-stats">
-            <div class="impact-card">
-              <strong>90 → 25 min</strong>
-              <span>Reducción del tiempo por factura</span>
-            </div>
-            <div class="impact-card">
-              <strong>~60 h/mes</strong>
-              <span>Ahorro operativo estimado</span>
-            </div>
-            <div class="impact-card">
-              <strong>100%</strong>
-              <span>Trazabilidad del flujo de facturas</span>
-            </div>
-          </div>
-          <div class="card">
-            <h2>Enfoque actual</h2>
-            <p>Resolver cuellos de botella operativos con reporting accionable, limpieza de datos y automatización viable para equipos que ya trabajan en Google Workspace y Excel.</p>
-          </div>
-          <div class="callout">
-            <h3>Tipo de reto donde encajo</h3>
-            <p>Entornos con procesos manuales, visibilidad limitada y necesidad de conectar operación, costos y seguimiento en una misma vista.</p>
-            <div class="mini-list" aria-label="Áreas foco">
-              <span>Automatización</span>
-              <span>Dashboards</span>
-              <span>Control de costos</span>
-              <span>Mejora continua</span>
-            </div>
-          </div>
-        </aside>
+          <aside class="hero-side">
+            <section class="surface profile-panel" aria-label="Resumen profesional">
+              <div class="profile-head">
+                <img src="./assets/profile.png" alt="Foto de Yuliam Rivera">
+                <div class="profile-copy">
+                  <p class="profile-name">Yuliam Rivera</p>
+                  <p class="role">Data Analyst</p>
+                  <p class="location">Cali, Colombia · Remoto / híbrido</p>
+                </div>
+              </div>
+              <div class="impact-grid">
+                <article class="impact-card">
+                  <span class="impact-label">Tiempo por factura</span>
+                  <strong>90 → 25 min</strong>
+                </article>
+                <article class="impact-card">
+                  <span class="impact-label">Ahorro estimado</span>
+                  <strong>~60 h/mes</strong>
+                </article>
+                <article class="impact-card">
+                  <span class="impact-label">Trazabilidad</span>
+                  <strong>100%</strong>
+                </article>
+              </div>
+            </section>
+            <section class="surface signal-panel">
+              <p class="section-label">Enfoque actual</p>
+              <h2>Reporting accionable y automatización viable para operación.</h2>
+              <p>
+                Encajo mejor en entornos con procesos manuales, visibilidad limitada y necesidad de conectar costos,
+                seguimiento y desempeño en una misma vista.
+              </p>
+              <div class="mini-list" aria-label="Áreas foco">
+                <span>Automatización</span>
+                <span>Dashboards</span>
+                <span>Control de costos</span>
+                <span>Mejora continua</span>
+              </div>
+            </section>
+          </aside>
+        </div>
       </div>
     </section>
 
-    <section class="proof-strip" aria-label="Pruebas de valor">
-      <div class="container proof-grid">
-        <article class="proof-card">
-          <strong>Perfil híbrido</strong>
-          <p>Combino lectura operativa de mantenimiento con ejecución técnica en análisis y automatización.</p>
-        </article>
-        <article class="proof-card">
-          <strong>Implementación real</strong>
-          <p>No son ejercicios de portafolio aislados: los casos nacen de procesos y restricciones reales.</p>
-        </article>
-        <article class="proof-card">
-          <strong>Stack pragmático</strong>
-          <p>Priorizo herramientas fáciles de desplegar y mantener en contextos de GitHub, Google y Excel.</p>
-        </article>
-        <article class="proof-card">
-          <strong>Comunicación clara</strong>
-          <p>Traduzco datos y métricas en tableros y narrativas útiles para áreas técnicas y administrativas.</p>
-        </article>
+    <section class="section section-contrast">
+      <div class="container">
+        <div class="section-shell two-column-shell">
+          <div class="section-stamp">
+            <span>Propuesta</span>
+            <h2>Perfil pensado para resolver cuellos de botella operativos.</h2>
+          </div>
+          <div class="bento-grid">
+            <article class="surface bento-card emphasis-card">
+              <p class="section-label">Cómo aporto</p>
+              <h3>Menos trabajo manual, más lectura útil del negocio.</h3>
+              <p>
+                Mi propuesta está orientada a operación: ordenar fuentes, volverlas trazables y convertirlas en señales
+                que sirvan para decidir sin fricción.
+              </p>
+            </article>
+            <article class="surface bento-card">
+              <p class="section-label">Criterio operativo</p>
+              <h3>Entiendo el contexto antes de modelar el dato.</h3>
+              <p>Vengo de mantenimiento hospitalario, así que no trabajo el dato aislado del proceso real.</p>
+            </article>
+            <article class="surface bento-card">
+              <p class="section-label">Implementación real</p>
+              <h3>No son demos sueltas.</h3>
+              <p>Los casos nacen de restricciones reales: tiempo, herramientas disponibles y necesidad de seguimiento.</p>
+            </article>
+            <article class="surface bento-card">
+              <p class="section-label">Comunicación</p>
+              <h3>Traduzco métricas en narrativas accionables.</h3>
+              <p>Diseño tableros y resúmenes que pueden leer áreas técnicas y administrativas sin perder contexto.</p>
+            </article>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="sobre-mi" class="section">
-      <div class="container section-panel">
-        <div class="section-intro">
-          <h2>Perfil</h2>
-          <p>La propuesta de valor está orientada a operaciones: menos trabajo manual, más trazabilidad y mejor lectura del desempeño.</p>
-        </div>
-        <div class="two-col">
-          <div>
-            <p class="lead">
-              Soy Ingeniera Industrial en último semestre y tecnóloga en análisis y desarrollo de software. He trabajado
-              en mantenimiento hospitalario analizando información operativa y financiera, diseñando KPIs, estructurando
-              procesos ETL básicos y publicando dashboards para seguimiento de costos y desempeño.
-            </p>
+      <div class="container">
+        <div class="section-shell two-column-shell">
+          <div class="section-stamp">
+            <span>Perfil</span>
+            <h2>Base industrial, software y lectura de mantenimiento.</h2>
           </div>
-          <div class="facts">
-            <article class="fact-card">
-              <h3>Lo que aporto</h3>
-              <p>Curiosidad analítica, criterio operativo y foco en soluciones que un equipo pueda sostener sin depender de una plataforma compleja.</p>
+          <div class="content-stack">
+            <article class="surface narrative-card">
+              <p class="lead">
+                Soy Ingeniera Industrial en último semestre y tecnóloga en análisis y desarrollo de software. He trabajado
+                en mantenimiento hospitalario analizando información operativa y financiera, diseñando KPIs, estructurando
+                procesos ETL básicos y publicando dashboards para seguimiento de costos y desempeño.
+              </p>
             </article>
-            <article class="fact-card">
-              <h3>Cómo trabajo</h3>
-              <p>Primero ordeno la fuente, luego defino indicadores y finalmente diseño una capa visual que facilite el seguimiento.</p>
-            </article>
-            <article class="fact-card">
-              <h3>Herramientas clave</h3>
-              <p>Excel avanzado, Python, Looker Studio, Google Apps Script, AppSheet y Google Sheets.</p>
-            </article>
+            <div class="fact-grid">
+              <article class="surface fact-card">
+                <p class="section-label">Lo que aporto</p>
+                <h3>Curiosidad analítica con criterio práctico.</h3>
+                <p>Busco soluciones que un equipo pueda sostener sin depender de una plataforma compleja.</p>
+              </article>
+              <article class="surface fact-card">
+                <p class="section-label">Cómo trabajo</p>
+                <h3>Fuente, indicador, capa visual.</h3>
+                <p>Primero ordeno el origen del dato, luego defino métricas y finalmente diseño seguimiento.</p>
+              </article>
+              <article class="surface fact-card">
+                <p class="section-label">Herramientas</p>
+                <h3>Google stack + Excel + Python.</h3>
+                <p>Looker Studio, Apps Script, AppSheet, Google Sheets y automatización ligera.</p>
+              </article>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <section id="experiencia" class="section">
-      <div class="container section-panel">
-        <div class="section-head">
-          <h2>Experiencia</h2>
-          <p>Resultados aplicados a mantenimiento, control de costos y reporting para toma de decisiones.</p>
+      <div class="container">
+        <div class="section-shell two-column-shell">
+          <div class="section-stamp">
+            <span>Experiencia</span>
+            <h2>Resultados aplicados a mantenimiento, costos y reporting.</h2>
+          </div>
+          <div class="timeline">
+            <article class="surface timeline-item">
+              <div class="timeline-meta">Mar 2024 - Actualidad</div>
+              <h3>Analista de Planeación de Mantenimiento</h3>
+              <p class="company">Clínica de Occidente · Cali, Colombia</p>
+              <ul class="list">
+                <li>Análisis de datos operativos y financieros para la planeación del mantenimiento.</li>
+                <li>Diseño y seguimiento de KPIs mediante procesos ETL ligeros.</li>
+                <li>Dashboards en Looker Studio para control de costos OPEX/CAPEX.</li>
+                <li>Automatización de reportes con Excel avanzado y Google Apps Script.</li>
+                <li>Soporte analítico a jefaturas técnicas y áreas administrativas.</li>
+              </ul>
+            </article>
+            <article class="surface timeline-item">
+              <div class="timeline-meta">Sep 2018 - Feb 2024</div>
+              <h3>Técnico en Refrigeración y Aire Acondicionado</h3>
+              <p class="company">Clínica de Occidente · Cali, Colombia</p>
+              <ul class="list">
+                <li>Gestión y análisis de información técnica de equipos críticos.</li>
+                <li>Registro y evaluación de fallas recurrentes para identificar patrones.</li>
+                <li>Soporte a implementación de sistemas BMS como fuente de datos operativos.</li>
+              </ul>
+            </article>
+          </div>
         </div>
-        <div class="timeline">
-          <article class="timeline-item">
-            <div class="timeline-meta">Mar 2024 - Actualidad</div>
-            <h3>Analista de Planeación de Mantenimiento</h3>
-            <p class="company">Clínica de Occidente · Cali, Colombia</p>
-            <ul class="list">
-              <li>Análisis de datos operativos y financieros para la planeación del mantenimiento.</li>
-              <li>Diseño y seguimiento de KPIs mediante procesos ETL ligeros.</li>
-              <li>Dashboards en Looker Studio para control de costos OPEX/CAPEX.</li>
-              <li>Automatización de reportes con Excel avanzado y Google Apps Script.</li>
-              <li>Soporte analítico a jefaturas técnicas y áreas administrativas.</li>
-            </ul>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-meta">Sep 2018 - Feb 2024</div>
-            <h3>Técnico en Refrigeración y Aire Acondicionado</h3>
-            <p class="company">Clínica de Occidente · Cali, Colombia</p>
-            <ul class="list">
-              <li>Gestión y análisis de información técnica de equipos críticos.</li>
-              <li>Registro y evaluación de fallas recurrentes para identificar patrones.</li>
-              <li>Soporte a implementación de sistemas BMS como fuente de datos operativos.</li>
-            </ul>
-          </article>
+      </div>
+    </section>
+
+    <section class="section section-accent">
+      <div class="container">
+        <div class="section-shell two-column-shell">
+          <div class="section-stamp">
+            <span>Método</span>
+            <h2>Mi forma de resolver problemas operativos con datos.</h2>
+          </div>
+          <div class="process-grid">
+            <article class="surface process-card">
+              <span class="step-pill">01</span>
+              <h3>Ordenar la fuente</h3>
+              <p>Limpiar y estructurar datos para que la operación deje de depender de trabajo manual repetitivo.</p>
+            </article>
+            <article class="surface process-card">
+              <span class="step-pill">02</span>
+              <h3>Definir señales</h3>
+              <p>Convertir el proceso en indicadores, estados y criterios de seguimiento comprensibles.</p>
+            </article>
+            <article class="surface process-card">
+              <span class="step-pill">03</span>
+              <h3>Automatizar lo viable</h3>
+              <p>Reducir tiempo y errores con herramientas que ya encajan en el contexto del equipo.</p>
+            </article>
+            <article class="surface process-card">
+              <span class="step-pill">04</span>
+              <h3>Publicar visibilidad</h3>
+              <p>Diseñar tableros y vistas ejecutivas que hagan visible el avance, el costo y las alertas.</p>
+            </article>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="proyectos" class="section">
-      <div class="container section-panel">
-        <div class="section-head">
-          <h2>Proyectos</h2>
-          <p>Casos seleccionados con foco en trazabilidad, eficiencia y despliegue sencillo.</p>
-        </div>
-        <div class="project-grid">
-          <article class="project-card featured">
-            <div class="project-meta">Automatización · BI</div>
-            <h3>Gestión de facturas XML a panel de control</h3>
-            <p class="project-brief"><strong>Problema:</strong> proceso manual, lento y con baja trazabilidad.</p>
-            <p class="project-brief"><strong>Solución:</strong> flujo ligero con Apps Script, AppSheet, Google Sheets y Looker Studio.</p>
-            <p class="project-brief"><strong>Impacto:</strong> reducción de 90 a 25 minutos por factura, trazabilidad total y ahorro operativo mensual.</p>
-            <div class="project-links">
-              <a class="text-link" href="https://github.com/yuliamrg/invoice-automation-bi-portfolio" target="_blank" rel="noopener">Repositorio</a>
-              <a class="text-link" href="https://lookerstudio.google.com/reporting/b96d1334-b932-47f7-83b2-6f0fc7cb2a99" target="_blank" rel="noopener">Dashboard</a>
-              <a class="text-link" href="https://www.appsheet.com/start/e30903ad-d255-41e1-9dc9-bec9de2abe35" target="_blank" rel="noopener">App</a>
+      <div class="container">
+        <div class="section-shell stacked-shell">
+          <div class="section-heading">
+            <div>
+              <p class="section-label">Proyectos</p>
+              <h2>Casos seleccionados con impacto visible y despliegue sencillo.</h2>
             </div>
-            <div class="project-tags">
-              <span>Apps Script</span>
-              <span>AppSheet</span>
-              <span>Looker Studio</span>
-              <span>Google Sheets</span>
-            </div>
-          </article>
-          <article class="project-card">
-            <div class="project-meta">Analytics Engineering</div>
-            <h3>Indicadores de mantenimiento en Qsystems</h3>
-            <p class="project-brief"><strong>Problema:</strong> indicadores limitados y preparación manual en Excel.</p>
-            <p class="project-brief"><strong>Solución:</strong> pipeline en Python y Colab con ETL y publicación en Sheets.</p>
-            <p class="project-brief"><strong>Impacto:</strong> indicadores reproducibles y menor fricción operativa.</p>
-            <div class="project-links">
-              <a class="text-link" href="https://github.com/yuliamrg/maintenance-orders-analytics" target="_blank" rel="noopener">Repositorio</a>
-              <a class="text-link" href="https://lookerstudio.google.com/reporting/9cf84ee0-b370-4d30-be66-e0f866a84cdb" target="_blank" rel="noopener">Dashboard</a>
-            </div>
-            <div class="project-tags">
-              <span>Python</span>
-              <span>pandas</span>
-              <span>Google Sheets API</span>
-              <span>Looker Studio</span>
-            </div>
-          </article>
-          <article class="project-card">
-            <div class="project-meta">Portafolio técnico</div>
-            <h3>Más proyectos documentados en GitHub</h3>
-            <p class="project-brief">Cada repo está planteado como caso: contexto, flujo de datos, evidencias y decisiones de implementación.</p>
-            <div class="project-links">
-              <a class="text-link" href="https://github.com/yuliamrg" target="_blank" rel="noopener">Ver repositorios</a>
-            </div>
-            <div class="project-tags">
-              <span>Casos reales</span>
-              <span>Google Stack</span>
-              <span>BI</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container section-panel">
-        <div class="section-head">
-          <h2>Qué puedo resolver</h2>
-          <p>Servicios y aportes para equipos que necesitan visibilidad y velocidad sin sobreingeniería.</p>
-        </div>
-        <div class="service-grid">
-          <article class="service-card">
-            <div class="project-meta">01</div>
-            <h3>Automatización de reportes</h3>
-            <p>Diseño flujos con Apps Script y Google Workspace para bajar carga operativa y reducir errores manuales.</p>
-          </article>
-          <article class="service-card">
-            <div class="project-meta">02</div>
-            <h3>ETL ligero y calidad de datos</h3>
-            <p>Limpio, normalizo y organizo fuentes para que un dashboard no dependa de trabajo manual recurrente.</p>
-          </article>
-          <article class="service-card">
-            <div class="project-meta">03</div>
-            <h3>Dashboards accionables</h3>
-            <p>Construyo KPIs y vistas ejecutivas que permiten leer avance, costos y alertas de forma inmediata.</p>
-          </article>
+            <p class="section-summary">Cada caso busca demostrar criterio operativo, estructura analítica y foco en adopción real.</p>
+          </div>
+          <div class="project-grid">
+            <article class="surface project-card featured">
+              <div class="project-topline">
+                <span class="project-meta">Automatización · BI</span>
+                <span class="project-score">Caso principal</span>
+              </div>
+              <h3>Gestión de facturas XML a panel de control</h3>
+              <div class="project-story">
+                <p class="project-brief"><strong>Problema:</strong> proceso manual, lento y con baja trazabilidad.</p>
+                <p class="project-brief"><strong>Solución:</strong> flujo ligero con Apps Script, AppSheet, Google Sheets y Looker Studio.</p>
+                <p class="project-brief"><strong>Impacto:</strong> reducción de 90 a 25 minutos por factura, trazabilidad total y ahorro operativo mensual.</p>
+              </div>
+              <div class="project-highlight-grid" aria-label="Impacto del caso principal">
+                <article class="project-highlight">
+                  <span>Tiempo por factura</span>
+                  <strong>90 → 25 min</strong>
+                </article>
+                <article class="project-highlight">
+                  <span>Ahorro operativo</span>
+                  <strong>~60 h/mes</strong>
+                </article>
+                <article class="project-highlight">
+                  <span>Trazabilidad</span>
+                  <strong>100%</strong>
+                </article>
+              </div>
+              <div class="project-links">
+                <a class="text-link" href="https://github.com/yuliamrg/invoice-automation-bi-portfolio" target="_blank" rel="noopener">Repositorio</a>
+                <a class="text-link" href="https://lookerstudio.google.com/reporting/b96d1334-b932-47f7-83b2-6f0fc7cb2a99" target="_blank" rel="noopener">Dashboard</a>
+                <a class="text-link" href="https://www.appsheet.com/start/e30903ad-d255-41e1-9dc9-bec9de2abe35" target="_blank" rel="noopener">App</a>
+              </div>
+              <div class="project-tags">
+                <span>Apps Script</span>
+                <span>AppSheet</span>
+                <span>Looker Studio</span>
+                <span>Google Sheets</span>
+              </div>
+            </article>
+            <article class="surface project-card">
+              <div class="project-topline">
+                <span class="project-meta">Analytics Engineering</span>
+              </div>
+              <h3>Indicadores de mantenimiento en Qsystems</h3>
+              <p class="project-brief"><strong>Problema:</strong> indicadores limitados y preparación manual en Excel.</p>
+              <p class="project-brief"><strong>Solución:</strong> pipeline en Python y Colab con ETL y publicación en Sheets.</p>
+              <p class="project-brief"><strong>Impacto:</strong> indicadores reproducibles y menor fricción operativa.</p>
+              <div class="project-links">
+                <a class="text-link" href="https://github.com/yuliamrg/maintenance-orders-analytics" target="_blank" rel="noopener">Repositorio</a>
+                <a class="text-link" href="https://lookerstudio.google.com/reporting/9cf84ee0-b370-4d30-be66-e0f866a84cdb" target="_blank" rel="noopener">Dashboard</a>
+              </div>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>pandas</span>
+                <span>Google Sheets API</span>
+                <span>Looker Studio</span>
+              </div>
+            </article>
+            <article class="surface project-card">
+              <div class="project-topline">
+                <span class="project-meta">Portafolio técnico</span>
+              </div>
+              <h3>Más proyectos documentados en GitHub</h3>
+              <p class="project-brief">Cada repositorio está planteado como caso: contexto, flujo de datos, decisiones y evidencias.</p>
+              <div class="project-links">
+                <a class="text-link" href="https://github.com/yuliamrg" target="_blank" rel="noopener">Ver repositorios</a>
+              </div>
+              <div class="project-tags">
+                <span>Casos reales</span>
+                <span>Google Stack</span>
+                <span>BI</span>
+              </div>
+            </article>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="habilidades" class="section">
-      <div class="container section-panel">
-        <div class="section-head">
-          <h2>Stack y habilidades</h2>
-          <p>Base actual orientada a análisis operativo, visualización y automatización.</p>
-        </div>
-        <div class="skill-grid">
-          <article class="skill-card">
-            <h3>Análisis de datos</h3>
-            <p>Python básico-intermedio, limpieza de datos, EDA y SQL en formación.</p>
-          </article>
-          <article class="skill-card">
-            <h3>Visualización</h3>
-            <p>Looker Studio, diseño de KPIs, estructura de dashboards y storytelling de datos.</p>
-          </article>
-          <article class="skill-card">
-            <h3>Automatización</h3>
-            <p>Excel avanzado, Google Apps Script, AppSheet, Google Sheets y documentación de flujos.</p>
-          </article>
-        </div>
-        <div class="tool-grid" aria-label="Herramientas principales">
-          <span class="tool-chip">Python</span>
-          <span class="tool-chip">SQL en formación</span>
-          <span class="tool-chip">Looker Studio</span>
-          <span class="tool-chip">Google Apps Script</span>
-          <span class="tool-chip">AppSheet</span>
-          <span class="tool-chip">Excel avanzado</span>
-          <span class="tool-chip">Google Sheets</span>
-          <span class="tool-chip">Git</span>
+      <div class="container">
+        <div class="section-shell stacked-shell">
+          <div class="section-heading">
+            <div>
+              <p class="section-label">Stack y habilidades</p>
+              <h2>Base técnica orientada a análisis operativo, visualización y automatización.</h2>
+            </div>
+            <p class="section-summary">Herramientas elegidas por velocidad de implementación, claridad y sostenibilidad.</p>
+          </div>
+          <div class="capability-grid">
+            <article class="surface skill-card">
+              <p class="section-label">Análisis de datos</p>
+              <h3>EDA, limpieza y lectura operativa.</h3>
+              <p>Python básico-intermedio, limpieza de datos, EDA y SQL en formación.</p>
+            </article>
+            <article class="surface skill-card">
+              <p class="section-label">Visualización</p>
+              <h3>KPIs que sí sirven para seguimiento.</h3>
+              <p>Looker Studio, diseño de indicadores, estructura de dashboards y storytelling de datos.</p>
+            </article>
+            <article class="surface skill-card">
+              <p class="section-label">Automatización</p>
+              <h3>Procesos más ligeros y menos repetitivos.</h3>
+              <p>Excel avanzado, Google Apps Script, AppSheet, Google Sheets y documentación de flujos.</p>
+            </article>
+          </div>
+          <div class="tool-grid" aria-label="Herramientas principales">
+            <span class="tool-chip">Python</span>
+            <span class="tool-chip">SQL en formación</span>
+            <span class="tool-chip">Looker Studio</span>
+            <span class="tool-chip">Google Apps Script</span>
+            <span class="tool-chip">AppSheet</span>
+            <span class="tool-chip">Excel avanzado</span>
+            <span class="tool-chip">Google Sheets</span>
+            <span class="tool-chip">Git</span>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="container section-panel">
-        <div class="section-head">
-          <h2>Formación</h2>
-          <p>Base técnica y académica alineada con el trabajo en datos y operación.</p>
-        </div>
-        <div class="education-grid">
-          <article class="edu-card">
-            <h3>Ingeniería Industrial</h3>
-            <p>Politécnico Grancolombiano · Último semestre</p>
-          </article>
-          <article class="edu-card">
-            <h3>Tecnóloga en Análisis y Desarrollo de Software</h3>
-            <p>SENA · Etapa práctica</p>
-          </article>
-          <article class="edu-card">
-            <h3>Diplomado en Análisis y Narrativa de Datos</h3>
-            <p>Politécnico Grancolombiano · En curso</p>
-          </article>
+      <div class="container">
+        <div class="section-shell two-column-shell">
+          <div class="section-stamp">
+            <span>Formación</span>
+            <h2>Trayectoria académica alineada con datos y operación.</h2>
+          </div>
+          <div class="education-grid">
+            <article class="surface edu-card">
+              <p class="section-label">Profesional</p>
+              <h3>Ingeniería Industrial</h3>
+              <p>Politécnico Grancolombiano · Último semestre</p>
+            </article>
+            <article class="surface edu-card">
+              <p class="section-label">Tecnología</p>
+              <h3>Tecnóloga en Análisis y Desarrollo de Software</h3>
+              <p>SENA · Etapa práctica</p>
+            </article>
+            <article class="surface edu-card">
+              <p class="section-label">Formación complementaria</p>
+              <h3>Diplomado en Análisis y Narrativa de Datos</h3>
+              <p>Politécnico Grancolombiano · En curso</p>
+            </article>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="contacto" class="section contact">
-      <div class="container section-panel">
-        <div class="section-head">
-          <h2>Contacto</h2>
-          <p>Si necesitas soporte en reporting, automatización o una transición ordenada hacia una práctica de datos más útil, conversemos.</p>
-        </div>
-        <div class="contact-card">
-          <div>
-            <h3>Email</h3>
-            <p><a href="mailto:yuliam.rivera@outlook.com">yuliam.rivera@outlook.com</a></p>
+      <div class="container">
+        <div class="surface contact-band">
+          <div class="contact-copy">
+            <p class="section-label">Contacto</p>
+            <h2>Si necesitas reporting, trazabilidad o automatización operativa, conversemos.</h2>
+            <p>Busco aportar en equipos donde los datos deban traducirse en velocidad, control y mejor seguimiento.</p>
           </div>
-          <div>
-            <h3>GitHub</h3>
-            <p><a href="https://github.com/yuliamrg" target="_blank" rel="noopener">github.com/yuliamrg</a></p>
-          </div>
-          <div>
-            <h3>LinkedIn</h3>
-            <p><a href="https://linkedin.com/in/yuliamrivera-467b05114" target="_blank" rel="noopener">linkedin.com/in/yuliamrivera-467b05114</a></p>
+          <div class="contact-grid">
+            <div>
+              <h3>Email</h3>
+              <p><a href="mailto:yuliam.rivera@outlook.com">yuliam.rivera@outlook.com</a></p>
+            </div>
+            <div>
+              <h3>GitHub</h3>
+              <p><a href="https://github.com/yuliamrg" target="_blank" rel="noopener">github.com/yuliamrg</a></p>
+            </div>
+            <div>
+              <h3>LinkedIn</h3>
+              <p><a href="https://linkedin.com/in/yuliamrivera-467b05114" target="_blank" rel="noopener">linkedin.com/in/yuliamrivera-467b05114</a></p>
+            </div>
           </div>
         </div>
       </div>
