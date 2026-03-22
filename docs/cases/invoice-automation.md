@@ -270,11 +270,11 @@ Cambios logrados:
 ```
 /
 ├─ README.md
-├─ images/
-│  ├─ dashboard_facturacion.png
-│  ├─ appsheet_lista.png
-│  ├─ appsheet_detalle.png
-│  └─ arquitectura.png
+└─ docs/
+   ├─ cases/
+   │  └─ invoice-automation.md
+   ├─ cv/
+   └─ rules/
 
 ```
 

@@ -214,7 +214,7 @@ La tabla `fac_ordenes` se conecta en Looker Studio para construir un dashboard c
    - sobrescribe la hoja final `fac_ordenes` en Google Sheets
 3. Looker Studio consume la hoja y actualiza visualizaciones.
 
-📌 link al notebook o instrucciones más detalladas: 
+📌 link al notebook o instrucciones mas detalladas: 
 [Link](./src/limpieza_datos_fac_ordenes.py)
 
 ---

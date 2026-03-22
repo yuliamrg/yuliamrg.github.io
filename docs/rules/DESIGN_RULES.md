@@ -9,6 +9,7 @@ Estas reglas aplican a este portafolio estatico desplegado en GitHub Pages. La p
 - Cualquier interaccion debe funcionar con HTML, CSS y JavaScript minimo.
 - Los assets deben ser pocos y livianos para no penalizar la carga inicial.
 - La version en espanol y en ingles deben mantenerse equivalentes en estructura.
+- Las reglas de arquitectura base viven en `docs/rules/ARCHITECTURE.md`; este documento no debe duplicarlas salvo cuando afecten directamente el diseno.
 
 ## Reglas de sistema visual
 
@@ -38,6 +39,16 @@ Estas reglas aplican a este portafolio estatico desplegado en GitHub Pages. La p
 - El contenido debe reforzar el contexto donde mejor encaja el perfil: operaciones, mantenimiento, reporting y automatizacion.
 - Evitar texto abstracto o claims vagos sin evidencia.
 - El tono debe ser profesional y concreto; no usar lenguaje inflado.
+
+## Reglas de documentacion
+
+- Mantener un `README.md` con la estructura actual del repositorio y el flujo de mantenimiento.
+- Mantener `docs/rules/ARCHITECTURE.md` como fuente de verdad para reglas estructurales del proyecto.
+- Mantener `docs/rules/DOCUMENTATION.md` como fuente de verdad para la organizacion documental.
+- Si se modifica contenido en `index.html`, revisar y actualizar su equivalente en `en/index.html`.
+- Si se actualizan proyectos o CV, sincronizar tambien los archivos `.md`, `.html` y `.pdf` relacionados cuando aplique.
+- Toda documentacion nueva debe describir proposito, archivo fuente y forma basica de mantenimiento.
+- Evitar dejar documentos huerfanos o placeholders que no existan en el repositorio real.
 
 ## Reglas de interaccion
 
