@@ -25,8 +25,10 @@ El repositorio contiene una implementación estática, sin build ni dependencias
 ```text
 /
 |-- index.html                     # Home en español
+|-- cv/                            # CV web narrativo en español
 |-- en/
 |   |-- index.html                 # Home en inglés
+|   |-- cv/                        # CV web narrativo en inglés
 |   `-- cases/                     # Casos extendidos en inglés
 |-- cases/                         # Casos extendidos en español
 |-- styles.css                     # Estilos compartidos ES/EN
@@ -54,8 +56,10 @@ El repositorio contiene una implementación estática, sin build ni dependencias
 ## Qué documenta cada archivo
 
 - `index.html`: propuesta de valor, experiencia, proyectos, stack, formación y contacto en español.
+- `cv/`: CV web narrativo en español, complementario al PDF descargable.
 - `cases/`: páginas HTML estáticas para profundizar en casos principales.
 - `en/index.html`: equivalente funcional de la home en inglés.
+- `en/cv/`: CV web narrativo equivalente en inglés.
 - `en/cases/`: páginas HTML estáticas equivalentes para casos en inglés.
 - `styles.css`: sistema visual compartido entre ambas versiones.
 - `docs/rules/ARCHITECTURE.md`: limites tecnicos y reglas estructurales del proyecto.
