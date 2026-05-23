@@ -26,7 +26,9 @@ El repositorio contiene una implementación estática, sin build ni dependencias
 /
 |-- index.html                     # Home en español
 |-- en/
-|   `-- index.html                 # Home en inglés
+|   |-- index.html                 # Home en inglés
+|   `-- cases/                     # Casos extendidos en inglés
+|-- cases/                         # Casos extendidos en español
 |-- styles.css                     # Estilos compartidos ES/EN
 |-- assets/
 |   `-- profile.png                # Foto de perfil
@@ -52,7 +54,9 @@ El repositorio contiene una implementación estática, sin build ni dependencias
 ## Qué documenta cada archivo
 
 - `index.html`: propuesta de valor, experiencia, proyectos, stack, formación y contacto en español.
+- `cases/`: páginas HTML estáticas para profundizar en casos principales.
 - `en/index.html`: equivalente funcional de la home en inglés.
+- `en/cases/`: páginas HTML estáticas equivalentes para casos en inglés.
 - `styles.css`: sistema visual compartido entre ambas versiones.
 - `docs/rules/ARCHITECTURE.md`: limites tecnicos y reglas estructurales del proyecto.
 - `docs/rules/DOCUMENTATION.md`: criterios para crear, ubicar y actualizar documentacion.
@@ -71,6 +75,7 @@ Si cambia el perfil, experiencia, proyectos o contacto:
 
 - editar `index.html`
 - replicar el cambio correspondiente en `en/index.html`
+- si el cambio afecta un proyecto principal, revisar tambien `cases/` y `en/cases/`
 - verificar que los enlaces entre `/` y `/en/` sigan correctos
 
 ### 2. Actualizar documentos de apoyo

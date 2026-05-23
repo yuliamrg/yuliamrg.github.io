@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caso: Automatización de facturas | Yuliam Rivera</title>
+  <meta name="description" content="Caso de automatización de facturas XML con Apps Script, AppSheet, Google Sheets y Looker Studio.">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="case-page">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="site-backdrop" aria-hidden="true">
+    <div class="site-grid"></div>
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-shell">
+      <a class="brand-group" href="../">
+        <span class="brand-mark" aria-hidden="true">YR</span>
+        <span class="brand-copy">
+          <strong>Yuliam Rivera</strong>
+          <span>Data Analyst · Caso de automatización</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Caso">
+        <a href="../#proyectos">Proyectos</a>
+        <a href="../#contacto">Contacto</a>
+        <a class="lang" href="../en/cases/invoice-automation.html">EN</a>
+        <a class="nav-cta" href="../exports/cv_data_analytics.pdf" target="_blank" rel="noopener">Abrir CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" class="page-shell">
+    <section class="section">
+      <div class="container">
+        <div class="case-hero section-panel">
+          <div>
+            <p class="section-label">Caso principal · Automatización + BI</p>
+            <h1>Facturas XML a control operativo.</h1>
+            <p class="hero-intro">
+              Flujo en Google Workspace para capturar facturas desde correo, estructurar datos desde XML,
+              operar estados en AppSheet y publicar indicadores en Looker Studio.
+            </p>
+            <div class="case-nav">
+              <a class="btn btn-primary" href="https://lookerstudio.google.com/reporting/b96d1334-b932-47f7-83b2-6f0fc7cb2a99" target="_blank" rel="noopener">Ver dashboard</a>
+              <a class="btn btn-secondary" href="https://github.com/yuliamrg/invoice-automation-bi-portfolio" target="_blank" rel="noopener">Repositorio</a>
+            </div>
+          </div>
+
+          <aside class="case-summary-card">
+            <p class="section-label">Impacto</p>
+            <div class="case-stat-grid">
+              <article class="case-stat">
+                <span>Tiempo por factura</span>
+                <strong>90 -> 25 min</strong>
+              </article>
+              <article class="case-stat">
+                <span>Ahorro estimado</span>
+                <strong>~60 h/mes</strong>
+              </article>
+              <article class="case-stat">
+                <span>Trazabilidad</span>
+                <strong>100%</strong>
+              </article>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-method">
+      <div class="container">
+        <div class="section-panel">
+          <div class="case-content-grid">
+            <article class="case-block">
+              <h2>Problema</h2>
+              <ul class="case-list">
+                <li>Las facturas llegaban como ZIP con XML y PDF.</li>
+                <li>El equipo debía descargar, abrir, validar, responder y archivar manualmente.</li>
+                <li>La trazabilidad dependía de carpetas y búsquedas posteriores.</li>
+                <li>El control de gasto no quedaba consolidado en una fuente analítica.</li>
+              </ul>
+            </article>
+
+            <article class="case-block">
+              <h2>Solución</h2>
+              <div class="case-flow" aria-label="Flujo de solución">
+                <span>Gmail etiqueta correos de facturas</span>
+                <span>Apps Script descarga ZIP, extrae XML/PDF y guarda soportes en Drive</span>
+                <span>Google Sheets consolida campos, links, estados y trazabilidad</span>
+                <span>AppSheet permite gestionar aceptación, rechazo o redirección</span>
+                <span>Looker Studio publica gasto, estados, proveedores y presupuesto</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-skills">
+      <div class="container">
+        <div class="section-panel">
+          <div class="section-heading">
+            <div>
+              <p class="section-label">Decisiones técnicas</p>
+              <h2>Automatización ligera, trazable y mantenible.</h2>
+            </div>
+          </div>
+          <div class="case-step-grid">
+            <article class="case-step">
+              <h3>Idempotencia por CUFE</h3>
+              <p>El identificador único evita duplicados y permite reprocesar con menor riesgo.</p>
+            </article>
+            <article class="case-step">
+              <h3>Links como evidencia</h3>
+              <p>El registro guarda enlace al soporte PDF/XML y al correo original para auditoría rápida.</p>
+            </article>
+            <article class="case-step">
+              <h3>Interfaz operativa</h3>
+              <p>AppSheet reduce fricción: el equipo cambia estados sin tocar la base directamente.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><a class="text-link" href="../">Volver al portafolio</a></p>
+    </div>
+  </footer>
+</body>
+</html>
